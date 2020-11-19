@@ -27,7 +27,7 @@ class PostsViewController: UIViewController, UITableViewDataSource, UITableViewD
         postTableView.estimatedRowHeight = 200.0
         
         // Set presenter
-        presenter = PostListPresenter(delegate: self)
+        presenter = PostListPresenter(delegate: self, apiService: APIService())
         presenter?.fetchPostList()
         
         // Add target for refresh control

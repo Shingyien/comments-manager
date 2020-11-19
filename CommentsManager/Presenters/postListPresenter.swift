@@ -16,15 +16,17 @@ protocol postListDelegate: class {
 
 class PostListPresenter{
     weak var delegate: postListDelegate?
+    var apiService: APIService?
     
-    init(delegate: postListDelegate) {
+    init(delegate: postListDelegate, apiService: APIService) {
         self.delegate = delegate
+        self.apiService = apiService
     }
     
     func fetchPostList() {
         self.delegate?.showLoading()
 
-        APIService().fetchPostList() { [weak self] (success, postList) in
+        apiService?.fetchPostList() { [weak self] (success, postList) in
                         
             guard let self = self else {
                 return
