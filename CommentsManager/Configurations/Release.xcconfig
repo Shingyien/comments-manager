@@ -1,0 +1,11 @@
+//
+//  Release.xcconfig
+//  CommentsManager
+//
+//  Created by Shing Yien on 18/11/2020.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+API_BASE_URL = https:/$()/jsonplaceholder.typicode.com

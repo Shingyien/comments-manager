@@ -1,0 +1,866 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0FF4C5E9DED0D6FB99DFC114 /* Pods_CommentsManagerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6227A826846EB46A33528472 /* Pods_CommentsManagerTests.framework */; };
+		2B994BCE256529A900C46AFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B994BCD256529A900C46AFC /* AppDelegate.swift */; };
+		2B994BD0256529A900C46AFC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B994BCF256529A900C46AFC /* SceneDelegate.swift */; };
+		2B994BD2256529A900C46AFC /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B994BD1256529A900C46AFC /* PostsViewController.swift */; };
+		2B994BD5256529A900C46AFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B994BD3256529A900C46AFC /* Main.storyboard */; };
+		2B994BD7256529AC00C46AFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B994BD6256529AC00C46AFC /* Assets.xcassets */; };
+		2B994BDA256529AC00C46AFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B994BD8256529AC00C46AFC /* LaunchScreen.storyboard */; };
+		2B994BE5256529AC00C46AFC /* CommentListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B994BE4256529AC00C46AFC /* CommentListPresenterTests.swift */; };
+		2B994BF0256529AC00C46AFC /* CommentsManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B994BEF256529AC00C46AFC /* CommentsManagerUITests.swift */; };
+		2B994C1725652D7600C46AFC /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B994C1525652D7600C46AFC /* PostTableViewCell.swift */; };
+		2B994C1825652D7600C46AFC /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B994C1625652D7600C46AFC /* PostTableViewCell.xib */; };
+		2B994C21256534BD00C46AFC /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B994C20256534BD00C46AFC /* Post.swift */; };
+		2B994C29256534CA00C46AFC /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B994C28256534CA00C46AFC /* Comment.swift */; };
+		2B994C8A25653A9800C46AFC /* postListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B994C8925653A9800C46AFC /* postListPresenter.swift */; };
+		2B994C8F25653B4B00C46AFC /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B994C8E25653B4B00C46AFC /* APIService.swift */; };
+		2B994CA42565420F00C46AFC /* CommentListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B994CA32565420F00C46AFC /* CommentListPresenter.swift */; };
+		2B994CAE256545D400C46AFC /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B994CAD256545D400C46AFC /* CommentsViewController.swift */; };
+		2B994CBC2565481A00C46AFC /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B994CBA2565481A00C46AFC /* CommentTableViewCell.swift */; };
+		2B994CBD2565481A00C46AFC /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B994CBB2565481A00C46AFC /* CommentTableViewCell.xib */; };
+		2B994E3E25663C2700C46AFC /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2B994E3D25663C2700C46AFC /* Debug.xcconfig */; };
+		2B994E4625663C4D00C46AFC /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2B994E4525663C4D00C46AFC /* Release.xcconfig */; };
+		EDD52A09B8B9B00BBB57E08D /* Pods_CommentsManager_CommentsManagerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7750040C2ED9EDFEFEB34C1D /* Pods_CommentsManager_CommentsManagerUITests.framework */; };
+		F24D638AADB8AECBE6D1888F /* Pods_CommentsManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7CBC4C6B461495E55FEB973 /* Pods_CommentsManager.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2B994BE1256529AC00C46AFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B994BC2256529A900C46AFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B994BC9256529A900C46AFC;
+			remoteInfo = CommentsManager;
+		};
+		2B994BEC256529AC00C46AFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B994BC2256529A900C46AFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B994BC9256529A900C46AFC;
+			remoteInfo = CommentsManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2A47953C10831D89BC1151EC /* Pods-CommentsManager-CommentsManagerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommentsManager-CommentsManagerUITests.debug.xcconfig"; path = "Target Support Files/Pods-CommentsManager-CommentsManagerUITests/Pods-CommentsManager-CommentsManagerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2B994BCA256529A900C46AFC /* CommentsManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommentsManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B994BCD256529A900C46AFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2B994BCF256529A900C46AFC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2B994BD1256529A900C46AFC /* PostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
+		2B994BD4256529A900C46AFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2B994BD6256529AC00C46AFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2B994BD9256529AC00C46AFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2B994BDB256529AC00C46AFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B994BE0256529AC00C46AFC /* CommentsManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommentsManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B994BE4256529AC00C46AFC /* CommentListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentListPresenterTests.swift; sourceTree = "<group>"; };
+		2B994BE6256529AC00C46AFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B994BEB256529AC00C46AFC /* CommentsManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommentsManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B994BEF256529AC00C46AFC /* CommentsManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsManagerUITests.swift; sourceTree = "<group>"; };
+		2B994BF1256529AC00C46AFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B994C1525652D7600C46AFC /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		2B994C1625652D7600C46AFC /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		2B994C20256534BD00C46AFC /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		2B994C28256534CA00C46AFC /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		2B994C8925653A9800C46AFC /* postListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = postListPresenter.swift; sourceTree = "<group>"; };
+		2B994C8E25653B4B00C46AFC /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		2B994CA32565420F00C46AFC /* CommentListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentListPresenter.swift; sourceTree = "<group>"; };
+		2B994CAD256545D400C46AFC /* CommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
+		2B994CBA2565481A00C46AFC /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		2B994CBB2565481A00C46AFC /* CommentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
+		2B994E3D25663C2700C46AFC /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		2B994E4525663C4D00C46AFC /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		575B2D0C8C32AC1333768F20 /* Pods-CommentsManagerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommentsManagerTests.release.xcconfig"; path = "Target Support Files/Pods-CommentsManagerTests/Pods-CommentsManagerTests.release.xcconfig"; sourceTree = "<group>"; };
+		6227A826846EB46A33528472 /* Pods_CommentsManagerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommentsManagerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68A6C33C367EE94E12A0CE99 /* Pods-CommentsManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommentsManager.debug.xcconfig"; path = "Target Support Files/Pods-CommentsManager/Pods-CommentsManager.debug.xcconfig"; sourceTree = "<group>"; };
+		7750040C2ED9EDFEFEB34C1D /* Pods_CommentsManager_CommentsManagerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommentsManager_CommentsManagerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E21675AF6C56BF224EB9B75 /* Pods-CommentsManagerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommentsManagerTests.debug.xcconfig"; path = "Target Support Files/Pods-CommentsManagerTests/Pods-CommentsManagerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BDB7ADFD86FBFCDF0576D84C /* Pods-CommentsManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommentsManager.release.xcconfig"; path = "Target Support Files/Pods-CommentsManager/Pods-CommentsManager.release.xcconfig"; sourceTree = "<group>"; };
+		DF344F054DDE67B69D4F7424 /* Pods-CommentsManager-CommentsManagerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommentsManager-CommentsManagerUITests.release.xcconfig"; path = "Target Support Files/Pods-CommentsManager-CommentsManagerUITests/Pods-CommentsManager-CommentsManagerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E7CBC4C6B461495E55FEB973 /* Pods_CommentsManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommentsManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B994BC7256529A900C46AFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F24D638AADB8AECBE6D1888F /* Pods_CommentsManager.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B994BDD256529AC00C46AFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FF4C5E9DED0D6FB99DFC114 /* Pods_CommentsManagerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B994BE8256529AC00C46AFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDD52A09B8B9B00BBB57E08D /* Pods_CommentsManager_CommentsManagerUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B994BC1256529A900C46AFC = {
+			isa = PBXGroup;
+			children = (
+				2B994BCC256529A900C46AFC /* CommentsManager */,
+				2B994BE3256529AC00C46AFC /* CommentsManagerTests */,
+				2B994BEE256529AC00C46AFC /* CommentsManagerUITests */,
+				2B994BCB256529A900C46AFC /* Products */,
+				F6ED4A1A8C7D8C9350FD34DA /* Pods */,
+				5C3910771B1A574EDF1ABC7B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2B994BCB256529A900C46AFC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B994BCA256529A900C46AFC /* CommentsManager.app */,
+				2B994BE0256529AC00C46AFC /* CommentsManagerTests.xctest */,
+				2B994BEB256529AC00C46AFC /* CommentsManagerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B994BCC256529A900C46AFC /* CommentsManager */ = {
+			isa = PBXGroup;
+			children = (
+				2B994E3C25663BD500C46AFC /* Configurations */,
+				2B994CC425655F2400C46AFC /* Services */,
+				2B994C1F256534AD00C46AFC /* Models */,
+				2B994CAC256545B800C46AFC /* Views */,
+				2B994CA82565424100C46AFC /* Presenters */,
+				2B994BCD256529A900C46AFC /* AppDelegate.swift */,
+				2B994BCF256529A900C46AFC /* SceneDelegate.swift */,
+				2B994BDB256529AC00C46AFC /* Info.plist */,
+				2B994BD6256529AC00C46AFC /* Assets.xcassets */,
+			);
+			path = CommentsManager;
+			sourceTree = "<group>";
+		};
+		2B994BE3256529AC00C46AFC /* CommentsManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				2B994BE4256529AC00C46AFC /* CommentListPresenterTests.swift */,
+				2B994BE6256529AC00C46AFC /* Info.plist */,
+			);
+			path = CommentsManagerTests;
+			sourceTree = "<group>";
+		};
+		2B994BEE256529AC00C46AFC /* CommentsManagerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2B994BEF256529AC00C46AFC /* CommentsManagerUITests.swift */,
+				2B994BF1256529AC00C46AFC /* Info.plist */,
+			);
+			path = CommentsManagerUITests;
+			sourceTree = "<group>";
+		};
+		2B994C05256529D300C46AFC /* Table View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2B994C1525652D7600C46AFC /* PostTableViewCell.swift */,
+				2B994C1625652D7600C46AFC /* PostTableViewCell.xib */,
+				2B994CBA2565481A00C46AFC /* CommentTableViewCell.swift */,
+				2B994CBB2565481A00C46AFC /* CommentTableViewCell.xib */,
+			);
+			path = "Table View Cells";
+			sourceTree = "<group>";
+		};
+		2B994C1F256534AD00C46AFC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2B994C20256534BD00C46AFC /* Post.swift */,
+				2B994C28256534CA00C46AFC /* Comment.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2B994CA82565424100C46AFC /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				2B994C8925653A9800C46AFC /* postListPresenter.swift */,
+				2B994CA32565420F00C46AFC /* CommentListPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		2B994CAC256545B800C46AFC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2B994E3B25663BA700C46AFC /* View Controllers */,
+				2B994E722566692900C46AFC /* Storyboards */,
+				2B994C05256529D300C46AFC /* Table View Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2B994CC425655F2400C46AFC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2B994C8E25653B4B00C46AFC /* APIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2B994E3B25663BA700C46AFC /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2B994BD1256529A900C46AFC /* PostsViewController.swift */,
+				2B994CAD256545D400C46AFC /* CommentsViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		2B994E3C25663BD500C46AFC /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				2B994E3D25663C2700C46AFC /* Debug.xcconfig */,
+				2B994E4525663C4D00C46AFC /* Release.xcconfig */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		2B994E722566692900C46AFC /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2B994BD3256529A900C46AFC /* Main.storyboard */,
+				2B994BD8256529AC00C46AFC /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		5C3910771B1A574EDF1ABC7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7CBC4C6B461495E55FEB973 /* Pods_CommentsManager.framework */,
+				7750040C2ED9EDFEFEB34C1D /* Pods_CommentsManager_CommentsManagerUITests.framework */,
+				6227A826846EB46A33528472 /* Pods_CommentsManagerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F6ED4A1A8C7D8C9350FD34DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				68A6C33C367EE94E12A0CE99 /* Pods-CommentsManager.debug.xcconfig */,
+				BDB7ADFD86FBFCDF0576D84C /* Pods-CommentsManager.release.xcconfig */,
+				2A47953C10831D89BC1151EC /* Pods-CommentsManager-CommentsManagerUITests.debug.xcconfig */,
+				DF344F054DDE67B69D4F7424 /* Pods-CommentsManager-CommentsManagerUITests.release.xcconfig */,
+				9E21675AF6C56BF224EB9B75 /* Pods-CommentsManagerTests.debug.xcconfig */,
+				575B2D0C8C32AC1333768F20 /* Pods-CommentsManagerTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2B994BC9256529A900C46AFC /* CommentsManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B994BF4256529AC00C46AFC /* Build configuration list for PBXNativeTarget "CommentsManager" */;
+			buildPhases = (
+				44AE550C11945EEF5D10DE80 /* [CP] Check Pods Manifest.lock */,
+				2B994BC6256529A900C46AFC /* Sources */,
+				2B994BC7256529A900C46AFC /* Frameworks */,
+				2B994BC8256529A900C46AFC /* Resources */,
+				67979DED520019B1FA3E0C0F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CommentsManager;
+			productName = CommentsManager;
+			productReference = 2B994BCA256529A900C46AFC /* CommentsManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2B994BDF256529AC00C46AFC /* CommentsManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B994BF7256529AC00C46AFC /* Build configuration list for PBXNativeTarget "CommentsManagerTests" */;
+			buildPhases = (
+				787A8BDB6242437141A1CD26 /* [CP] Check Pods Manifest.lock */,
+				2B994BDC256529AC00C46AFC /* Sources */,
+				2B994BDD256529AC00C46AFC /* Frameworks */,
+				2B994BDE256529AC00C46AFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B994BE2256529AC00C46AFC /* PBXTargetDependency */,
+			);
+			name = CommentsManagerTests;
+			productName = CommentsManagerTests;
+			productReference = 2B994BE0256529AC00C46AFC /* CommentsManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2B994BEA256529AC00C46AFC /* CommentsManagerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B994BFA256529AC00C46AFC /* Build configuration list for PBXNativeTarget "CommentsManagerUITests" */;
+			buildPhases = (
+				2F00784EC65422CAA43E5B0C /* [CP] Check Pods Manifest.lock */,
+				2B994BE7256529AC00C46AFC /* Sources */,
+				2B994BE8256529AC00C46AFC /* Frameworks */,
+				2B994BE9256529AC00C46AFC /* Resources */,
+				E44A2A574FFB5D19D8C68073 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B994BED256529AC00C46AFC /* PBXTargetDependency */,
+			);
+			name = CommentsManagerUITests;
+			productName = CommentsManagerUITests;
+			productReference = 2B994BEB256529AC00C46AFC /* CommentsManagerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2B994BC2256529A900C46AFC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					2B994BC9256529A900C46AFC = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					2B994BDF256529AC00C46AFC = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 2B994BC9256529A900C46AFC;
+					};
+					2B994BEA256529AC00C46AFC = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 2B994BC9256529A900C46AFC;
+					};
+				};
+			};
+			buildConfigurationList = 2B994BC5256529A900C46AFC /* Build configuration list for PBXProject "CommentsManager" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2B994BC1256529A900C46AFC;
+			productRefGroup = 2B994BCB256529A900C46AFC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2B994BC9256529A900C46AFC /* CommentsManager */,
+				2B994BDF256529AC00C46AFC /* CommentsManagerTests */,
+				2B994BEA256529AC00C46AFC /* CommentsManagerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B994BC8256529A900C46AFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B994BDA256529AC00C46AFC /* LaunchScreen.storyboard in Resources */,
+				2B994BD7256529AC00C46AFC /* Assets.xcassets in Resources */,
+				2B994E3E25663C2700C46AFC /* Debug.xcconfig in Resources */,
+				2B994CBD2565481A00C46AFC /* CommentTableViewCell.xib in Resources */,
+				2B994BD5256529A900C46AFC /* Main.storyboard in Resources */,
+				2B994E4625663C4D00C46AFC /* Release.xcconfig in Resources */,
+				2B994C1825652D7600C46AFC /* PostTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B994BDE256529AC00C46AFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B994BE9256529AC00C46AFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F00784EC65422CAA43E5B0C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CommentsManager-CommentsManagerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		44AE550C11945EEF5D10DE80 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CommentsManager-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67979DED520019B1FA3E0C0F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CommentsManager/Pods-CommentsManager-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CommentsManager/Pods-CommentsManager-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CommentsManager/Pods-CommentsManager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		787A8BDB6242437141A1CD26 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CommentsManagerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E44A2A574FFB5D19D8C68073 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CommentsManager-CommentsManagerUITests/Pods-CommentsManager-CommentsManagerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CommentsManager-CommentsManagerUITests/Pods-CommentsManager-CommentsManagerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CommentsManager-CommentsManagerUITests/Pods-CommentsManager-CommentsManagerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B994BC6256529A900C46AFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B994BD2256529A900C46AFC /* PostsViewController.swift in Sources */,
+				2B994CA42565420F00C46AFC /* CommentListPresenter.swift in Sources */,
+				2B994C29256534CA00C46AFC /* Comment.swift in Sources */,
+				2B994CBC2565481A00C46AFC /* CommentTableViewCell.swift in Sources */,
+				2B994BCE256529A900C46AFC /* AppDelegate.swift in Sources */,
+				2B994C8A25653A9800C46AFC /* postListPresenter.swift in Sources */,
+				2B994BD0256529A900C46AFC /* SceneDelegate.swift in Sources */,
+				2B994C1725652D7600C46AFC /* PostTableViewCell.swift in Sources */,
+				2B994C8F25653B4B00C46AFC /* APIService.swift in Sources */,
+				2B994CAE256545D400C46AFC /* CommentsViewController.swift in Sources */,
+				2B994C21256534BD00C46AFC /* Post.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B994BDC256529AC00C46AFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B994BE5256529AC00C46AFC /* CommentListPresenterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B994BE7256529AC00C46AFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B994BF0256529AC00C46AFC /* CommentsManagerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2B994BE2256529AC00C46AFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B994BC9256529A900C46AFC /* CommentsManager */;
+			targetProxy = 2B994BE1256529AC00C46AFC /* PBXContainerItemProxy */;
+		};
+		2B994BED256529AC00C46AFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B994BC9256529A900C46AFC /* CommentsManager */;
+			targetProxy = 2B994BEC256529AC00C46AFC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2B994BD3256529A900C46AFC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B994BD4256529A900C46AFC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2B994BD8256529AC00C46AFC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B994BD9256529AC00C46AFC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2B994BF2256529AC00C46AFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2B994BF3256529AC00C46AFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2B994BF5256529AC00C46AFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68A6C33C367EE94E12A0CE99 /* Pods-CommentsManager.debug.xcconfig */;
+			buildSettings = {
+				API_BASE_URL = "https:/$()/jsonplaceholder.typicode.com";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WU2Y89WQHS;
+				INFOPLIST_FILE = CommentsManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thestar.thestarmobile.CommentsManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2B994BF6256529AC00C46AFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDB7ADFD86FBFCDF0576D84C /* Pods-CommentsManager.release.xcconfig */;
+			buildSettings = {
+				API_BASE_URL = "https:/$()/jsonplaceholder.typicode.com";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WU2Y89WQHS;
+				INFOPLIST_FILE = CommentsManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thestar.thestarmobile.CommentsManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2B994BF8256529AC00C46AFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E21675AF6C56BF224EB9B75 /* Pods-CommentsManagerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WU2Y89WQHS;
+				INFOPLIST_FILE = CommentsManagerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thestar.thestarmobile.CommentsManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CommentsManager.app/CommentsManager";
+			};
+			name = Debug;
+		};
+		2B994BF9256529AC00C46AFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 575B2D0C8C32AC1333768F20 /* Pods-CommentsManagerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WU2Y89WQHS;
+				INFOPLIST_FILE = CommentsManagerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thestar.thestarmobile.CommentsManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CommentsManager.app/CommentsManager";
+			};
+			name = Release;
+		};
+		2B994BFB256529AC00C46AFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A47953C10831D89BC1151EC /* Pods-CommentsManager-CommentsManagerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WU2Y89WQHS;
+				INFOPLIST_FILE = CommentsManagerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thestar.thestarmobile.CommentsManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CommentsManager;
+			};
+			name = Debug;
+		};
+		2B994BFC256529AC00C46AFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF344F054DDE67B69D4F7424 /* Pods-CommentsManager-CommentsManagerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WU2Y89WQHS;
+				INFOPLIST_FILE = CommentsManagerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thestar.thestarmobile.CommentsManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CommentsManager;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B994BC5256529A900C46AFC /* Build configuration list for PBXProject "CommentsManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B994BF2256529AC00C46AFC /* Debug */,
+				2B994BF3256529AC00C46AFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B994BF4256529AC00C46AFC /* Build configuration list for PBXNativeTarget "CommentsManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B994BF5256529AC00C46AFC /* Debug */,
+				2B994BF6256529AC00C46AFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B994BF7256529AC00C46AFC /* Build configuration list for PBXNativeTarget "CommentsManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B994BF8256529AC00C46AFC /* Debug */,
+				2B994BF9256529AC00C46AFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B994BFA256529AC00C46AFC /* Build configuration list for PBXNativeTarget "CommentsManagerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B994BFB256529AC00C46AFC /* Debug */,
+				2B994BFC256529AC00C46AFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2B994BC2256529A900C46AFC /* Project object */;
+}
