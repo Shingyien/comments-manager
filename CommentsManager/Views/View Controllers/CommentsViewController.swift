@@ -11,7 +11,6 @@ class CommentsViewController: UIViewController, UITableViewDelegate, UITableView
     
     var post: Post?
     var comments: [Comment] = []
-    var allComments: [Comment] = []
     
     var presenter: CommentListPresenter?
     let refreshControl = UIRefreshControl()
